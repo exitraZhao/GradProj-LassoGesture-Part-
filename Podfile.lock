@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (1.5.1)
+  - PageMenu (2.0.0)
+
+DEPENDENCIES:
+  - lottie-ios
+  - PageMenu
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - lottie-ios
+    - PageMenu
+
+SPEC CHECKSUMS:
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+
+PODFILE CHECKSUM: de718e8efae80d8c209187ff88fa5c55f488cd26
+
+COCOAPODS: 1.5.0

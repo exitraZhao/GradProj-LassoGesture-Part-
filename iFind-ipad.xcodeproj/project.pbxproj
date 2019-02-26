@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF0806A820AC637B0023A93A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0806A620AC637A0023A93A /* BaseBrush.swift */; };
+		AF0806A920AC637B0023A93A /* PencilBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0806A720AC637B0023A93A /* PencilBrush.swift */; };
+		AF0806AD20ADCAAB0023A93A /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = AF0806AC20ADCAAB0023A93A /* SceneKit Scene.scn */; };
+		AF0806ED20AEC5980023A93A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0806EC20AEC5980023A93A /* art.scnassets */; };
+		AF43BBEC20A4417B00861A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BBEB20A4417B00861A9B /* AppDelegate.swift */; };
+		AF43BBEE20A4417B00861A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BBED20A4417B00861A9B /* ViewController.swift */; };
+		AF43BBF120A4417B00861A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF43BBEF20A4417B00861A9B /* Main.storyboard */; };
+		AF43BBF420A4417B00861A9B /* iFind_ipad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF43BBF220A4417B00861A9B /* iFind_ipad.xcdatamodeld */; };
+		AF43BBF620A4417C00861A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43BBF520A4417C00861A9B /* Assets.xcassets */; };
+		AF43BBF920A4417C00861A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF43BBF720A4417C00861A9B /* LaunchScreen.storyboard */; };
+		AF43BC0420A4417C00861A9B /* iFind_ipadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BC0320A4417C00861A9B /* iFind_ipadTests.swift */; };
+		AF43BC0F20A4417C00861A9B /* iFind_ipadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BC0E20A4417C00861A9B /* iFind_ipadUITests.swift */; };
+		AF43BC1D20A705F600861A9B /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BC1C20A705F600861A9B /* ApplicationViewController.swift */; };
+		AF43BC1F20A7061200861A9B /* ARApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BC1E20A7061200861A9B /* ARApplicationViewController.swift */; };
+		AF43BC2120A7063600861A9B /* FotoApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43BC2020A7063600861A9B /* FotoApplicationViewController.swift */; };
+		AF57903320CBF3B100B2B492 /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = AF57903220CBF3B000B2B492 /* star.json */; };
+		AF57903520CBF52000B2B492 /* star-2.json in Resources */ = {isa = PBXBuildFile; fileRef = AF57903420CBF52000B2B492 /* star-2.json */; };
+		AF57903720D0155200B2B492 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF57903620D0155200B2B492 /* Plane.swift */; };
+		C979BA9720E9A79474331C86 /* Pods_iFind_ipad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430D7DD6677C2544BC341C68 /* Pods_iFind_ipad.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF43BC0020A4417C00861A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF43BBE020A4417A00861A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF43BBE720A4417A00861A9B;
+			remoteInfo = "iFind-ipad";
+		};
+		AF43BC0B20A4417C00861A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF43BBE020A4417A00861A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF43BBE720A4417A00861A9B;
+			remoteInfo = "iFind-ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		430D7DD6677C2544BC341C68 /* Pods_iFind_ipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFind_ipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B924D78DA7B2519B155028 /* Pods-iFind-ipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFind-ipad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFind-ipad/Pods-iFind-ipad.debug.xcconfig"; sourceTree = "<group>"; };
+		6EDDAC1B711576A617756442 /* Pods-iFind-ipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFind-ipad.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFind-ipad/Pods-iFind-ipad.release.xcconfig"; sourceTree = "<group>"; };
+		AF0806A620AC637A0023A93A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseBrush.swift; path = ../../iFind_iOS/iFind/iFind/BaseBrush.swift; sourceTree = "<group>"; };
+		AF0806A720AC637B0023A93A /* PencilBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PencilBrush.swift; path = ../../iFind_iOS/iFind/iFind/PencilBrush.swift; sourceTree = "<group>"; };
+		AF0806AC20ADCAAB0023A93A /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
+		AF0806EC20AEC5980023A93A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		AF43BBE820A4417A00861A9B /* iFind-ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iFind-ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF43BBEB20A4417B00861A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF43BBED20A4417B00861A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF43BBF020A4417B00861A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF43BBF320A4417B00861A9B /* iFind_ipad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iFind_ipad.xcdatamodel; sourceTree = "<group>"; };
+		AF43BBF520A4417C00861A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF43BBF820A4417C00861A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF43BBFA20A4417C00861A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF43BBFF20A4417C00861A9B /* iFind-ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iFind-ipadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF43BC0320A4417C00861A9B /* iFind_ipadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFind_ipadTests.swift; sourceTree = "<group>"; };
+		AF43BC0520A4417C00861A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF43BC0A20A4417C00861A9B /* iFind-ipadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iFind-ipadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF43BC0E20A4417C00861A9B /* iFind_ipadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFind_ipadUITests.swift; sourceTree = "<group>"; };
+		AF43BC1020A4417C00861A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF43BC1C20A705F600861A9B /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		AF43BC1E20A7061200861A9B /* ARApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARApplicationViewController.swift; sourceTree = "<group>"; };
+		AF43BC2020A7063600861A9B /* FotoApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoApplicationViewController.swift; sourceTree = "<group>"; };
+		AF57903220CBF3B000B2B492 /* star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
+		AF57903420CBF52000B2B492 /* star-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "star-2.json"; sourceTree = "<group>"; };
+		AF57903620D0155200B2B492 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF43BBE520A4417A00861A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C979BA9720E9A79474331C86 /* Pods_iFind_ipad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43BBFC20A4417C00861A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43BC0720A4417C00861A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6A89E2EAF1E40642BD2F4E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B924D78DA7B2519B155028 /* Pods-iFind-ipad.debug.xcconfig */,
+				6EDDAC1B711576A617756442 /* Pods-iFind-ipad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF43BBDF20A4417A00861A9B = {
+			isa = PBXGroup;
+			children = (
+				AF43BBEA20A4417A00861A9B /* iFind-ipad */,
+				AF43BC0220A4417C00861A9B /* iFind-ipadTests */,
+				AF43BC0D20A4417C00861A9B /* iFind-ipadUITests */,
+				AF43BBE920A4417A00861A9B /* Products */,
+				A6A89E2EAF1E40642BD2F4E7 /* Pods */,
+				FED22089F9AD02D64910ECFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF43BBE920A4417A00861A9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF43BBE820A4417A00861A9B /* iFind-ipad.app */,
+				AF43BBFF20A4417C00861A9B /* iFind-ipadTests.xctest */,
+				AF43BC0A20A4417C00861A9B /* iFind-ipadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF43BBEA20A4417A00861A9B /* iFind-ipad */ = {
+			isa = PBXGroup;
+			children = (
+				AF0806EC20AEC5980023A93A /* art.scnassets */,
+				AF0806A620AC637A0023A93A /* BaseBrush.swift */,
+				AF57903220CBF3B000B2B492 /* star.json */,
+				AF57903420CBF52000B2B492 /* star-2.json */,
+				AF57903620D0155200B2B492 /* Plane.swift */,
+				AF0806A720AC637B0023A93A /* PencilBrush.swift */,
+				AF43BBEB20A4417B00861A9B /* AppDelegate.swift */,
+				AF43BBED20A4417B00861A9B /* ViewController.swift */,
+				AF43BC1C20A705F600861A9B /* ApplicationViewController.swift */,
+				AF43BC1E20A7061200861A9B /* ARApplicationViewController.swift */,
+				AF43BC2020A7063600861A9B /* FotoApplicationViewController.swift */,
+				AF43BBEF20A4417B00861A9B /* Main.storyboard */,
+				AF43BBF520A4417C00861A9B /* Assets.xcassets */,
+				AF43BBF720A4417C00861A9B /* LaunchScreen.storyboard */,
+				AF43BBFA20A4417C00861A9B /* Info.plist */,
+				AF43BBF220A4417B00861A9B /* iFind_ipad.xcdatamodeld */,
+				AF0806AC20ADCAAB0023A93A /* SceneKit Scene.scn */,
+			);
+			path = "iFind-ipad";
+			sourceTree = "<group>";
+		};
+		AF43BC0220A4417C00861A9B /* iFind-ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF43BC0320A4417C00861A9B /* iFind_ipadTests.swift */,
+				AF43BC0520A4417C00861A9B /* Info.plist */,
+			);
+			path = "iFind-ipadTests";
+			sourceTree = "<group>";
+		};
+		AF43BC0D20A4417C00861A9B /* iFind-ipadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF43BC0E20A4417C00861A9B /* iFind_ipadUITests.swift */,
+				AF43BC1020A4417C00861A9B /* Info.plist */,
+			);
+			path = "iFind-ipadUITests";
+			sourceTree = "<group>";
+		};
+		FED22089F9AD02D64910ECFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430D7DD6677C2544BC341C68 /* Pods_iFind_ipad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF43BBE720A4417A00861A9B /* iFind-ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF43BC1320A4417C00861A9B /* Build configuration list for PBXNativeTarget "iFind-ipad" */;
+			buildPhases = (
+				E3DD2A8A9EC95F4A85715AC8 /* [CP] Check Pods Manifest.lock */,
+				AF43BBE420A4417A00861A9B /* Sources */,
+				AF43BBE520A4417A00861A9B /* Frameworks */,
+				AF43BBE620A4417A00861A9B /* Resources */,
+				BB81A94DE8B8EDB0FD1D8B02 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iFind-ipad";
+			productName = "iFind-ipad";
+			productReference = AF43BBE820A4417A00861A9B /* iFind-ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF43BBFE20A4417C00861A9B /* iFind-ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF43BC1620A4417C00861A9B /* Build configuration list for PBXNativeTarget "iFind-ipadTests" */;
+			buildPhases = (
+				AF43BBFB20A4417C00861A9B /* Sources */,
+				AF43BBFC20A4417C00861A9B /* Frameworks */,
+				AF43BBFD20A4417C00861A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF43BC0120A4417C00861A9B /* PBXTargetDependency */,
+			);
+			name = "iFind-ipadTests";
+			productName = "iFind-ipadTests";
+			productReference = AF43BBFF20A4417C00861A9B /* iFind-ipadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF43BC0920A4417C00861A9B /* iFind-ipadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF43BC1920A4417C00861A9B /* Build configuration list for PBXNativeTarget "iFind-ipadUITests" */;
+			buildPhases = (
+				AF43BC0620A4417C00861A9B /* Sources */,
+				AF43BC0720A4417C00861A9B /* Frameworks */,
+				AF43BC0820A4417C00861A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF43BC0C20A4417C00861A9B /* PBXTargetDependency */,
+			);
+			name = "iFind-ipadUITests";
+			productName = "iFind-ipadUITests";
+			productReference = AF43BC0A20A4417C00861A9B /* iFind-ipadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF43BBE020A4417A00861A9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "赵一达";
+				TargetAttributes = {
+					AF43BBE720A4417A00861A9B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					AF43BBFE20A4417C00861A9B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = AF43BBE720A4417A00861A9B;
+					};
+					AF43BC0920A4417C00861A9B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = AF43BBE720A4417A00861A9B;
+					};
+				};
+			};
+			buildConfigurationList = AF43BBE320A4417A00861A9B /* Build configuration list for PBXProject "iFind-ipad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF43BBDF20A4417A00861A9B;
+			productRefGroup = AF43BBE920A4417A00861A9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF43BBE720A4417A00861A9B /* iFind-ipad */,
+				AF43BBFE20A4417C00861A9B /* iFind-ipadTests */,
+				AF43BC0920A4417C00861A9B /* iFind-ipadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF43BBE620A4417A00861A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0806AD20ADCAAB0023A93A /* SceneKit Scene.scn in Resources */,
+				AF43BBF920A4417C00861A9B /* LaunchScreen.storyboard in Resources */,
+				AF57903320CBF3B100B2B492 /* star.json in Resources */,
+				AF0806ED20AEC5980023A93A /* art.scnassets in Resources */,
+				AF57903520CBF52000B2B492 /* star-2.json in Resources */,
+				AF43BBF620A4417C00861A9B /* Assets.xcassets in Resources */,
+				AF43BBF120A4417B00861A9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43BBFD20A4417C00861A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43BC0820A4417C00861A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB81A94DE8B8EDB0FD1D8B02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iFind-ipad/Pods-iFind-ipad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFind-ipad/Pods-iFind-ipad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3DD2A8A9EC95F4A85715AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iFind-ipad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF43BBE420A4417A00861A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0806A820AC637B0023A93A /* BaseBrush.swift in Sources */,
+				AF57903720D0155200B2B492 /* Plane.swift in Sources */,
+				AF43BBEE20A4417B00861A9B /* ViewController.swift in Sources */,
+				AF43BC2120A7063600861A9B /* FotoApplicationViewController.swift in Sources */,
+				AF0806A920AC637B0023A93A /* PencilBrush.swift in Sources */,
+				AF43BC1D20A705F600861A9B /* ApplicationViewController.swift in Sources */,
+				AF43BBEC20A4417B00861A9B /* AppDelegate.swift in Sources */,
+				AF43BC1F20A7061200861A9B /* ARApplicationViewController.swift in Sources */,
+				AF43BBF420A4417B00861A9B /* iFind_ipad.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43BBFB20A4417C00861A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF43BC0420A4417C00861A9B /* iFind_ipadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43BC0620A4417C00861A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF43BC0F20A4417C00861A9B /* iFind_ipadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF43BC0120A4417C00861A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF43BBE720A4417A00861A9B /* iFind-ipad */;
+			targetProxy = AF43BC0020A4417C00861A9B /* PBXContainerItemProxy */;
+		};
+		AF43BC0C20A4417C00861A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF43BBE720A4417A00861A9B /* iFind-ipad */;
+			targetProxy = AF43BC0B20A4417C00861A9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF43BBEF20A4417B00861A9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF43BBF020A4417B00861A9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF43BBF720A4417C00861A9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF43BBF820A4417C00861A9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF43BC1120A4417C00861A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: m18221006616@gmail.com (S9JGUGLSBG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF43BC1220A4417C00861A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: m18221006616@gmail.com (S9JGUGLSBG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF43BC1420A4417C00861A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B924D78DA7B2519B155028 /* Pods-iFind-ipad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28QYBRPF7;
+				INFOPLIST_FILE = "iFind-ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.iFind-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF43BC1520A4417C00861A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDDAC1B711576A617756442 /* Pods-iFind-ipad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28QYBRPF7;
+				INFOPLIST_FILE = "iFind-ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.iFind-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF43BC1720A4417C00861A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28QYBRPF7;
+				INFOPLIST_FILE = "iFind-ipadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.iFind-ipadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFind-ipad.app/iFind-ipad";
+			};
+			name = Debug;
+		};
+		AF43BC1820A4417C00861A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28QYBRPF7;
+				INFOPLIST_FILE = "iFind-ipadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.iFind-ipadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFind-ipad.app/iFind-ipad";
+			};
+			name = Release;
+		};
+		AF43BC1A20A4417C00861A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28QYBRPF7;
+				INFOPLIST_FILE = "iFind-ipadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.iFind-ipadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iFind-ipad";
+			};
+			name = Debug;
+		};
+		AF43BC1B20A4417C00861A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28QYBRPF7;
+				INFOPLIST_FILE = "iFind-ipadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.iFind-ipadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iFind-ipad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF43BBE320A4417A00861A9B /* Build configuration list for PBXProject "iFind-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF43BC1120A4417C00861A9B /* Debug */,
+				AF43BC1220A4417C00861A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF43BC1320A4417C00861A9B /* Build configuration list for PBXNativeTarget "iFind-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF43BC1420A4417C00861A9B /* Debug */,
+				AF43BC1520A4417C00861A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF43BC1620A4417C00861A9B /* Build configuration list for PBXNativeTarget "iFind-ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF43BC1720A4417C00861A9B /* Debug */,
+				AF43BC1820A4417C00861A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF43BC1920A4417C00861A9B /* Build configuration list for PBXNativeTarget "iFind-ipadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF43BC1A20A4417C00861A9B /* Debug */,
+				AF43BC1B20A4417C00861A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF43BBF220A4417B00861A9B /* iFind_ipad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF43BBF320A4417B00861A9B /* iFind_ipad.xcdatamodel */,
+			);
+			currentVersion = AF43BBF320A4417B00861A9B /* iFind_ipad.xcdatamodel */;
+			path = iFind_ipad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF43BBE020A4417A00861A9B /* Project object */;
+}

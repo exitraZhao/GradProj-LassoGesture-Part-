@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mjr-fx-86q">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="DAe-Cs-Rry">
+            <objects>
+                <navigationController id="Weq-nd-LvT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Application" id="pCi-DW-zMX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gk5-gB-YpY">
+                        <rect key="frame" x="0.0" y="20" width="1112" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vd9-OM-2D9" kind="relationship" relationship="rootViewController" id="ZhL-KF-k7R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbj-Ft-0hS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="512"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="cWT-Ml-Q3J">
+            <objects>
+                <viewController id="vd9-OM-2D9" customClass="ApplicationViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ycw-3r-lzm">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="应用列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0B-M5-un8">
+                                <rect key="frame" x="20" y="91" width="114" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AR家具布置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-eO-dLC">
+                                <rect key="frame" x="97" y="312" width="86" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZL-6b-H6f">
+                                <rect key="frame" x="75" y="169" width="130" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="4" height="4"/>
+                                <state key="normal" title="Button" image="appli"/>
+                                <connections>
+                                    <segue destination="fB4-Lc-wBH" kind="showDetail" id="lgI-4c-eSl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rTG-Zl-0Du"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Anu-NC-BLf"/>
+                    <navigationItem key="navigationItem" id="Abb-jC-TOp"/>
+                    <connections>
+                        <segue destination="fB4-Lc-wBH" kind="showDetail" id="SLc-8i-egM"/>
+                        <segue destination="Kpu-aD-6D0" kind="show" id="IME-xI-IGY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nO-NL-Wyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374.8201438848921" y="511.51079136690652"/>
+        </scene>
+        <!--Application View Controller-->
+        <scene sceneID="5VX-bz-UeP">
+            <objects>
+                <viewController storyboardIdentifier="modelList" id="fB4-Lc-wBH" customClass="ARApplicationViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sqb-cV-ne6">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-bN-sik">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v73-c1-3dd" customClass="ToolView" customModule="iFind_ipad" customModuleProvider="target">
+                                <rect key="frame" x="645" y="22" width="444" height="791"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hint2" translatesAutoresizingMaskIntoConstraints="NO" id="VPI-0M-Zcs">
+                                <rect key="frame" x="150" y="61" width="327" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Nze-jd-i8E"/>
+                    </view>
+                    <connections>
+                        <outlet property="ToolView" destination="v73-c1-3dd" id="So4-2s-T1Z"/>
+                        <outlet property="hintMessage" destination="VPI-0M-Zcs" id="w15-L0-N9I"/>
+                        <outlet property="sceneView" destination="Ael-bN-sik" id="NIR-IE-20D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AN9-Be-L0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.2446043165469" y="511.51079136690652"/>
+        </scene>
+        <!--Model Table View Controller-->
+        <scene sceneID="4sx-8E-Ke0">
+            <objects>
+                <viewController storyboardIdentifier="modelTableViewController" id="BsH-47-ble" customClass="ModelTableViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wZ5-WZ-IFI">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eQx-p8-5e2">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mediaTableCell" id="zw8-9M-UXb" customClass="MediaTableCell" customModule="iFind_ipad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="1112" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zw8-9M-UXb" id="Uvm-X0-shf">
+                                            <rect key="frame" x="0.0" y="0.0" width="1112" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eQx-p8-5e2" firstAttribute="top" secondItem="wZ5-WZ-IFI" secondAttribute="top" id="5Qq-SV-KpC"/>
+                            <constraint firstItem="eQx-p8-5e2" firstAttribute="leading" secondItem="wZ5-WZ-IFI" secondAttribute="leading" id="IP0-Dr-Kvq"/>
+                            <constraint firstItem="eQx-p8-5e2" firstAttribute="height" secondItem="wZ5-WZ-IFI" secondAttribute="height" id="KQU-eO-fYj"/>
+                            <constraint firstItem="eQx-p8-5e2" firstAttribute="width" secondItem="wZ5-WZ-IFI" secondAttribute="width" id="cYC-9b-em4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yyN-yF-A3Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="mediaTableView" destination="eQx-p8-5e2" id="cNk-MC-OJj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZB-vA-1EW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2935" y="199"/>
+        </scene>
+        <!--Foto Application View Controller-->
+        <scene sceneID="4xd-Bn-jtU">
+            <objects>
+                <viewController id="Kpu-aD-6D0" customClass="FotoApplicationViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeb-zc-E25">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WRg-Ld-tuR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ft5-w2-kfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="1402"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="hPq-rQ-rXK">
+            <objects>
+                <navigationController id="DeB-Pq-b0w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" id="BWk-76-bSq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KtR-t8-A1n">
+                        <rect key="frame" x="0.0" y="20" width="1112" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jht-E2-waK" kind="relationship" relationship="rootViewController" id="TOJ-Sz-zAA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nzu-Tn-SnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-1348"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="eiS-RW-aPZ">
+            <objects>
+                <viewController id="Jht-E2-waK" customClass="ViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LlH-x5-xv5">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-ct-00d">
+                                <rect key="frame" x="648" y="195" width="444" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-vb-Lwl">
+                                        <rect key="frame" x="333" y="494" width="26" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="pencil"/>
+                                        <connections>
+                                            <action selector="pencil:" destination="Jht-E2-waK" eventType="touchUpInside" id="W87-eS-S1z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJv-DQ-cPi">
+                                        <rect key="frame" x="385" y="494" width="26" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="eraser"/>
+                                        <connections>
+                                            <action selector="eraser:" destination="Jht-E2-waK" eventType="touchUpInside" id="hH7-IJ-9Sw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaN-Yi-UTD">
+                                        <rect key="frame" x="19" y="475" width="29" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="undo"/>
+                                        <connections>
+                                            <action selector="undo:" destination="Jht-E2-waK" eventType="touchUpInside" id="JME-e6-vk3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir0-0Y-Hch">
+                                        <rect key="frame" x="19" y="529" width="29" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="redo"/>
+                                        <connections>
+                                            <action selector="redo:" destination="Jht-E2-waK" eventType="touchUpInside" id="ZdA-w6-nYE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS7-40-12w">
+                                        <rect key="frame" x="238" y="486" width="54" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="delete"/>
+                                        <connections>
+                                            <action selector="clean:" destination="Jht-E2-waK" eventType="touchUpInside" id="Fa9-Qh-0q3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6p-TL-0Kj">
+                                        <rect key="frame" x="81" y="486" width="54" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="search"/>
+                                        <connections>
+                                            <action selector="search:" destination="Jht-E2-waK" eventType="touchUpInside" id="LNP-4W-xyG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgd-dt-u8j">
+                                        <rect key="frame" x="160" y="486" width="54" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="refresh"/>
+                                        <connections>
+                                            <action selector="clean:" destination="Jht-E2-waK" eventType="touchUpInside" id="bc6-Ji-BbF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A3r-rh-Z7w" customClass="DrawPadView" customModule="iFind_ipad" customModuleProvider="target">
+                                <rect key="frame" x="648" y="195" width="444" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IEQ-E3-gUO">
+                                <rect key="frame" x="20" y="64" width="608" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4xk-YZ-Viv">
+                                    <size key="itemSize" width="196" height="196"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mediaCollectionCell" id="AIf-JG-G4J" customClass="MediaCollectionCell" customModule="iFind_ipad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="mTO-uk-KlS" kind="show" identifier="showMedia" id="yWh-wj-f5T"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="holder" translatesAutoresizingMaskIntoConstraints="NO" id="ewe-oa-m9s">
+                                <rect key="frame" x="210" y="300" width="222" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cB7-mh-cAO">
+                                <rect key="frame" x="311" y="391" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9os-ME-1NX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="vlM-5C-niy"/>
+                    <navigationItem key="navigationItem" id="mJd-Rv-96q"/>
+                    <connections>
+                        <outlet property="drawPadView" destination="A3r-rh-Z7w" id="FGc-ob-rxK"/>
+                        <outlet property="eraserButton" destination="JJv-DQ-cPi" id="FRW-md-nDk"/>
+                        <outlet property="indicator" destination="cB7-mh-cAO" id="03B-jX-SYr"/>
+                        <outlet property="mediaCollectionView" destination="IEQ-E3-gUO" id="t28-WN-uXj"/>
+                        <outlet property="padBackground" destination="BjP-ct-00d" id="hFe-AM-Kp9"/>
+                        <outlet property="pencilButton" destination="Rcy-vb-Lwl" id="M81-de-L2I"/>
+                        <outlet property="placeHolder" destination="ewe-oa-m9s" id="bni-Ev-sLS"/>
+                        <outlet property="resultCollectionView" destination="IEQ-E3-gUO" id="HS3-U4-VE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V44-wc-EYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374.8201438848921" y="-1348.201438848921"/>
+        </scene>
+        <!--Media View Controller-->
+        <scene sceneID="T3W-MU-MEi">
+            <objects>
+                <viewController id="mTO-uk-KlS" customClass="MediaViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l50-Ab-TVo">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-yj-NqW">
+                                <rect key="frame" x="160" y="20" width="952" height="814"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </sceneKitView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TPs-eP-e3k">
+                                <rect key="frame" x="2" y="20" width="150" height="814"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mediaTableViewCell" rowHeight="150" id="uKU-Ad-73a" customClass="MediaTableCell" customModule="iFind_ipad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uKU-Ad-73a" id="ZtN-FE-hpf">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nv5-tq-Dk9">
+                                <rect key="frame" x="1032" y="718" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwJ-E1-VJV">
+                                <rect key="frame" x="1032" y="718" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="mTO-uk-KlS" eventType="touchUpInside" id="Lyf-i7-a6j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="H1f-CQ-bQj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fbB-ke-cc7"/>
+                    <connections>
+                        <outlet property="animeBase" destination="Nv5-tq-Dk9" id="qgT-7u-3nJ"/>
+                        <outlet property="mediaOverView" destination="TPs-eP-e3k" id="g7C-Da-bdm"/>
+                        <outlet property="mediaSCNView" destination="ZBm-yj-NqW" id="bJZ-xS-FUo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQe-oK-qmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258.6330935251799" y="-1348.201438848921"/>
+        </scene>
+        <!--Favor-->
+        <scene sceneID="Eid-vo-NJd">
+            <objects>
+                <navigationController id="pPU-af-DIe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favor" id="Kec-kF-Wo9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ndh-d5-Jkc">
+                        <rect key="frame" x="0.0" y="20" width="1112" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="glh-kZ-Kkx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0G6-B9-Rjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-525"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NJv-I1-qrW">
+            <objects>
+                <tabBarController id="mjr-fx-86q" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rQ4-ng-tHO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DeB-Pq-b0w" kind="relationship" relationship="viewControllers" id="BVG-kE-G4S"/>
+                        <segue destination="pPU-af-DIe" kind="relationship" relationship="viewControllers" id="5uv-dr-o9D"/>
+                        <segue destination="Weq-nd-LvT" kind="relationship" relationship="viewControllers" id="YgS-z4-gQ4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbz-Pe-F3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="-777"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FavorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FavorViewController" customModule="iFind_ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P7v-WB-8xF">
+                                <rect key="frame" x="26" y="65" width="1060" height="669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bQa-Df-Acg">
+                                    <size key="itemSize" width="196" height="196"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mediaCollectionCell" id="YA8-Vr-ehE" customClass="MediaCollectionCell" customModule="iFind_ipad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="mTO-uk-KlS" kind="show" identifier="showMedia" id="NPv-Bd-hcy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HKm-Rk-D3k"/>
+                    <navigationItem key="navigationItem" id="nXU-Vo-K73"/>
+                    <connections>
+                        <outlet property="mediaCollectionView" destination="P7v-WB-8xF" id="4JQ-K3-M5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="-525"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appli" width="170" height="170"/>
+        <image name="delete" width="92" height="92"/>
+        <image name="eraser" width="26" height="76"/>
+        <image name="hint2" width="327" height="59"/>
+        <image name="holder" width="510" height="464"/>
+        <image name="pencil" width="26" height="76"/>
+        <image name="redo" width="39" height="33"/>
+        <image name="refresh" width="92" height="92"/>
+        <image name="search" width="92" height="92"/>
+        <image name="undo" width="39" height="33"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yWh-wj-f5T"/>
+        <segue reference="SLc-8i-egM"/>
+    </inferredMetricsTieBreakers>
+</document>
